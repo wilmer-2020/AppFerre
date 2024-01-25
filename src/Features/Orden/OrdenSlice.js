@@ -1,14 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = [
-    {
-        id:"1",
-        producto:"cemento",
-        cantidad:'10',
-        precio:"120",
-        total:'1200'
-    }
-]
+const initialState = []
 
 export const OrdenSlice = createSlice({
     name: 'orden',
