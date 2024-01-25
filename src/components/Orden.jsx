@@ -7,7 +7,7 @@ export const Orden = () => {
   return (
     <>
         <Form/>
-        <ButtonOrden/>
+        <ButtonOrden to={'/crear'} text={'Crear Orden'} className={'btn btn-primary'}/>
         <Table/>
     </>
   )

@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom"
 
-const ButtonOrden = () => {
+const ButtonOrden = ({to,text,className}) => {
   return (
-    <NavLink to={'/crear'}>Crear Orden</NavLink>
+    <NavLink to={to} className={className}>{text}</NavLink>
   )
 }
 

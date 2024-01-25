@@ -13,7 +13,6 @@ export const getProducts = () => {
                docs.push({...doc.data()})
             });
            setProducts(docs)
-           console.log(docs)
        } catch (error) {
            console.log(error)
        }
