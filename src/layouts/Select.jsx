@@ -7,9 +7,10 @@ const Select = ({name,onChange,value}) => {
 
   return (
     <>
-        <div className="">
+        <div className="form-group">
             <label htmlFor="">Productos</label>
             <select name={name} onChange={onChange} value={value}>
+            <option value="">-- Selecione el Producto</option>
                 {products.map(product => 
                     <option key={product.id} value={product.nombre}>{product.nombre}</option>
                 )}

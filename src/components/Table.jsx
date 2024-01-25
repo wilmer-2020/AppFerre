@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import { deleteOrden } from "../Features/Orden/OrdenSlice";
-import ButtonOrden from "../layouts/ButtonOrden.jsx"
+import Button from "../layouts/Button.jsx";
 
 const Table = () => {
 
@@ -38,8 +38,8 @@ const Table = () => {
           <td>{el.precio}</td>
           <td>{el.total}</td>
           <td>
-            <ButtonOrden to={`/editar/${el.id}`} text={'Editar'} className={'btn btn-warning'}/>
-            <button onClick={() => DeleteItem(el.id)} className="btn btn-danger">Eliminar</button>
+            <Button to={`/editar/${el.id}`} text={'Editar'} className={'btn btn-warning'}/>
+            <Button onClick={() => DeleteItem(el.id)} className="btn btn-danger" text={'Eliminar'}/>
           </td>
         </tr>
       ))

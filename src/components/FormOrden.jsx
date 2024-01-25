@@ -44,7 +44,7 @@ const FormOrden = () => {
 
   return (
     <>
-        <form action="" onSubmit={SendORden}>
+        <form action="" onSubmit={SendORden} className="orden-form">
             <Select name={'producto'} value={orden.producto} onChange={getDataInput}/>
             <Input 
             name={'cantidad'}
@@ -68,8 +68,10 @@ const FormOrden = () => {
 
             />
 
+            <div className="continer-buttons">
             <input type="submit" value="Agregar" className="btn btn-success"/>
             <button onClick={() => Navigate('/pedidos')} className="btn btn-info">Volver</button>
+            </div>
         </form>
     </>
   )

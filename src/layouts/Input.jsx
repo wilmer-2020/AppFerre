@@ -6,7 +6,9 @@ const Input = ({labelText,parrafoText,onChange,name,value}) => {
         type="text"
         name={name} 
         value={value}
-        onChange={onChange}/>
+        onChange={onChange}
+        required
+        />
         <p>{parrafoText}</p>
     </div>
   )
