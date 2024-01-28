@@ -8,11 +8,18 @@ const Select = ({name,onChange,value}) => {
   return (
     <>
         <div className="form-group">
-            <label htmlFor="">Productos</label>
-            <select name={name} onChange={onChange} value={value}>
-            <option value="">-- Selecione el Producto</option>
+            <label>Productos</label>
+            <select 
+            name={name} 
+            onChange={onChange} 
+            value={value}>
+            <option value=""> --Selecione el Producto-- </option>
                 {products.map(product => 
-                    <option key={product.id} value={product.nombre}>{product.nombre}</option>
+                    <option 
+                    key={product.id} 
+                    value={product.nombre}
+                    >{product.nombre}
+                    </option>
                 )}
             </select>
         </div>

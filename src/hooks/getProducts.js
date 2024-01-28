@@ -3,7 +3,7 @@ import { useEffect,useState } from "react";
 import { db } from "./FBKeys.js"
 
 export const getProducts = () => {
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
 
     const getData = async () => {
         try {
@@ -17,6 +17,7 @@ export const getProducts = () => {
            console.log(error)
        }
     }
+    
 
     useEffect(() => {
         getData()

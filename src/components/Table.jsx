@@ -5,7 +5,6 @@ import Button from "../layouts/Button.jsx";
 const Table = () => {
 
   const orden = useSelector(state => state.orden)
-  console.log(orden)
 
   const dispatch = useDispatch();
 
